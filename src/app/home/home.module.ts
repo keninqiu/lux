@@ -10,11 +10,12 @@ import { SalaryDataComponent } from './salary-data/salary-data.component';
 import { CustomersExperienceComponent } from './customers-experience/customers-experience.component';
 import { BestInClassComponent } from './best-in-class/best-in-class.component';
 import { FooterComponent } from './footer/footer.component';
+import { GsapComponent } from './gsap/gsap.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, MenuComponent, AdvComponent, CarouselComponent, ChangeComponent, SalaryDataComponent, CustomersExperienceComponent, BestInClassComponent, FooterComponent],
+  declarations: [HomeComponent, MenuComponent, AdvComponent, CarouselComponent, ChangeComponent, SalaryDataComponent, CustomersExperienceComponent, BestInClassComponent, FooterComponent, GsapComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
