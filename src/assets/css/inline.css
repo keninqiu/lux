@@ -662,3 +662,174 @@ g#pNum {
 .carouselslide.inactive {
     animation: .3s .1s FadeOutRight ease-out both;
 }
+
+.two-columns-branded {
+    display: grid;
+    overflow: hidden;
+    max-width: 100vw;
+}
+.two-columns-branded .second-column {
+    display: grid;
+    grid-template-areas: 'slideview';
+    position: relative;
+    z-index: 100;
+    height: max-content;
+
+}
+.two-columns-branded .gradient-bg {
+    padding-right: 150vw;
+    background: linear-gradient( 80deg,
+     var(--lightblue)0%, 
+     var(--blue) 30% 43%, 
+     var(--red) 80% );
+    background-size: 400% 100%;
+    background-position-x: 10%;
+    z-index: 1;
+    border-radius: 500px 0 0 500px;
+    height: 120%;
+    margin-top: -10%;
+    
+}
+.two-columns-branded .carouselslide {
+    grid-area: slideview;
+    transition: .4s ease all;
+    z-index: 100;
+    margin-top: 2rem;
+
+}
+.two-columns-branded .slide-nav {
+    z-index: 100;
+
+}
+.two-columns-branded .slide-nav button:after{
+    background-color: var(--darkgray);
+
+}
+.two-columns-branded .slide-nav button.active::after {
+    background-color: var(--white);
+}
+.two-columns-branded .slide-nav button:hover::after {
+    background-color: var(--gray);
+
+}
+
+
+.two-columns.colored-bg {
+    background: linear-gradient(
+        100deg,
+        var(--lightblue),
+        var(--darkblue)
+        );
+    background-size: 100% 100%;
+    background-position-x: 0%;
+}
+.award-slide-cont {
+    min-width: 440px;
+    min-height: 440px;
+    background: url(https://www.payscale.com/wp-content/themes/payscale-sage/resources/a6_inc/images/awardcircle.png);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    max-height: 500px;
+}
+.award-slide {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.award-slide img {    
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+
+
+}
+#simplecarousel-awards {
+    max-height: 550px;
+
+}
+
+
+
+.logo,
+a.logo {
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    box-shadow: 0px 4px 9px 2px #EDEFF0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    transition: all .5s ease;
+    background-color: #fff;
+
+}
+
+a.logo:hover {
+    background-color: #EDEFF0;
+}
+
+.g-logo {
+    max-width: 150px;
+    max-height: 75px;
+    width: auto;
+    filter: grayscale(1) opacity(0.5);
+    transition: all .5s ease;
+}
+
+a:hover.logo .g-logo {
+    filter: grayscale(0) opacity(1);
+}
+
+.logo-link {
+    position: absolute;
+    bottom: -21px;
+}
+
+.logo-link-icon .icon-circle {
+    fill: #ebebeb;
+    transition: all .5s ease;
+
+}
+
+.logo:hover .logo-link-icon .icon-circle {
+    fill: #2e0b96;
+}
+
+.logo-link-icon .icon-arrow {
+    stroke: #222;
+    transition: all .5s ease;
+}
+
+.logo:hover .logo-link-icon .icon-arrow {
+    stroke: #fff;
+}
+.bg-svg-1 {
+    margin-top: -30vh;
+}
+.bg-svg-1 svg {
+    width: 120vw;
+    margin-left: -10vw;
+}
+@media  only screen and (max-width: 600px) {
+    .logo,
+    a.logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .g-logo {
+        max-width: 125px ; 
+    }
+}
