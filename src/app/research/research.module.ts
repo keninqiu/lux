@@ -11,11 +11,13 @@ import { SkillComponent } from './skill/skill.component';
 import { IndustryComponent } from './industry/industry.component';
 import { SchoolComponent } from './school/school.component';
 import { SearchSalaryComponent } from './search-salary/search-salary.component';
+import { BrowseAllCategoriesComponent } from './browse-all-categories/browse-all-categories.component';
+import { FindYourMarketWorthComponent } from './find-your-market-worth/find-your-market-worth.component';
 
 
 
 @NgModule({
-  declarations: [ResearchComponent, EmployerComponent, JobComponent, DegreeComponent, CertificationComponent, SkillComponent, IndustryComponent, SchoolComponent, SearchSalaryComponent],
+  declarations: [ResearchComponent, EmployerComponent, JobComponent, DegreeComponent, CertificationComponent, SkillComponent, IndustryComponent, SchoolComponent, SearchSalaryComponent, BrowseAllCategoriesComponent, FindYourMarketWorthComponent],
   imports: [
     ResearchRoutingModule,
     LayoutModule,
