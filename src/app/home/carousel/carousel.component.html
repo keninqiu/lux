@@ -1,11 +1,12 @@
+
 <section class="hero text-white overflow-hidden flex flex-col justify-center relative">
-    <video pause="" muted="" loop="" id="heroVid">
+    <video autoplay id="heroVid">
         <source src="https://www.payscale.com/wp-content/themes/payscale-sage/resources/a6_inc/images/hero-bkg.mp4" type="video/mp4" id="vdo">
     </video>
 
     <div class="hero-grid">
         <div class="col1 flex flex-col md:justify-center pl-4 md:pl-10 lg:pl-14 md:relative">
-            <div class="gsap slide active" id="slide1" style="opacity: 0; visibility: hidden; transform: translate(0px, 10px); display: none;">
+            <div class="gsap slide active" id="slide1" [ngClass]="slideIndex == 0 ? 'show' : 'hide'">
                 <h1 class="heroHeadline mb-6 leading-tight">Pay is a<br> <span class="text-yellow">powerful</span> thing</h1>
                 <p class="lg:text-lg mb-12 font-light leading-normal content">Gain the insights and confidence to get pay right with relevant, validated salary data and industry-leading, AI-powered compensation software.</p>
                 <a href="https://www.payscale.com/price-a-job?tk=hp-hero-carousel" class="cta blue-cta" aria-label="Click here to access the Price a Job tool. This link opens another page in a new tab.">
@@ -23,7 +24,7 @@
 
                 </a>
             </div>
-            <div class="invisible gsap a6_hide slide" id="slide2" style="display: block; transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
+            <div class="invisible gsap a6_hide slide" id="slide2" [ngClass]="slideIndex == 1 ? 'show' : 'hide'">
                 <h1 class="heroHeadline mb-6  leading-tight">Follow the top compensation best practices for 2021</h1>
                 <p class="lg:text-lg mb-8 font-light leading-normal content">Take on 2021 with just-released insights on the best strategies and practices for pay increases, compensation management, communications, and transparency.</p>
                 <a href="https://www.payscale.com/cbpr" class="cta blue-cta" aria-label="Click here to read the Compensation Best Practices Report for 2021. This link opens another page in a new tab.">
@@ -41,8 +42,8 @@
                 </a>
             </div>
             <div class="nav absolute bottom-5 lg:bottom-16 xlg:bottom-20  flex">
-                <div class="slidenav mr-4" id="heroNav_1"></div>
-                <div class="slidenav mr-4 active" id="heroNav_2"></div>
+                <div class="slidenav mr-4" id="heroNav_1" (click)="changeSlideIndex(0)" [ngClass]="slideIndex == 0 ? 'active' : ''"></div>
+                <div class="slidenav mr-4" id="heroNav_2" (click)="changeSlideIndex(1)" [ngClass]="slideIndex == 1 ? 'active' : ''"></div>
             </div>
         </div>
         <div class="col2">
@@ -64,7 +65,7 @@
                 </g>
                 <circle cx="50%" cy="50%" id="pie" class="shape gsap slide2" fill="url(#linear-gradient)" data-svg-origin="230 30.6953125" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit;"></circle>
                 <circle cx="50%" cy="50%" id="slice" class="shape gsap slide2" stroke="rgb(56,128,238,.75)" fill="rgb(255,255,255,0)" data-svg-origin="500 101.3906125" style="transform-origin: 0px 0px; opacity: 1; stroke-dashoffset: 181.316; stroke-dasharray: 503.655px, 513.655px; visibility: inherit;" transform=""></circle>
-                <g id="pNum">
+                <g id="pNum" >
                     <text id="pieNum" class="slide2 gsap" x="50%" y="47%" text-anchor="middle" fill="white" dy="0" data-svg-origin="260.6875 55.25" style="transform-origin: 0px 0px; opacity: 1; visibility: inherit;">64%</text>
                 </g>
                 <g class="pieDetails-iphone">
