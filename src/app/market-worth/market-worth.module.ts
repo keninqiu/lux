@@ -7,11 +7,16 @@ import { TopComponent } from './top/top.component';
 import { ContentComponent } from './content/content.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { JobComponent } from './job/job.component';
+import { CompensationComponent } from './compensation/compensation.component';
+import { SpecialConsiderationsComponent } from './special-considerations/special-considerations.component';
+import { EmployerComponent } from './employer/employer.component';
+import { BenefitsComponent } from './benefits/benefits.component';
+import { EducationComponent } from './education/education.component';
 
 
 
 @NgModule({
-  declarations: [MarketWorthComponent, TopComponent, ContentComponent, BottomComponent, JobComponent],
+  declarations: [MarketWorthComponent, TopComponent, ContentComponent, BottomComponent, JobComponent, CompensationComponent, SpecialConsiderationsComponent, EmployerComponent, BenefitsComponent, EducationComponent],
   imports: [
     CommonModule,
     LayoutModule,
