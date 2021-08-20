@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-salary',
@@ -15,7 +16,9 @@ export class SearchSalaryComponent implements OnInit {
   @Input() title: string;
   @Input() selectedCategory: string;
   @Input() placeholder: string;
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.isOpen = false;
@@ -24,5 +27,9 @@ export class SearchSalaryComponent implements OnInit {
 
   toggle() {
     this.isOpen = !this.isOpen;
+  }
+
+  submit() {
+    this.router.navigate(['/salary']);
   }
 }
