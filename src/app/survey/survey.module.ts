@@ -15,11 +15,12 @@ import { EducationComponent } from './education/education.component';
 import { OptionalResearchQuestionsComponent } from './optional-research-questions/optional-research-questions.component';
 import { ReportComponent } from './report/report.component';
 import { PriceAJobComponent } from './price-a-job/price-a-job.component';
+import { DetailsComponent } from './price-a-job/details/details.component';
 
 
 
 @NgModule({
-  declarations: [SurveyComponent, TopComponent, ChooseComponent, BottomComponent, JobComponent, CompensationComponent, SpecialConsiderationsComponent, EmployerComponent, BenefitsComponent, EducationComponent, OptionalResearchQuestionsComponent, ReportComponent, PriceAJobComponent],
+  declarations: [SurveyComponent, TopComponent, ChooseComponent, BottomComponent, JobComponent, CompensationComponent, SpecialConsiderationsComponent, EmployerComponent, BenefitsComponent, EducationComponent, OptionalResearchQuestionsComponent, ReportComponent, PriceAJobComponent, DetailsComponent],
   imports: [
     CommonModule,
     LayoutModule,

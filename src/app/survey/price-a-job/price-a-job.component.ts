@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-price-a-job',
@@ -10,12 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PriceAJobComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   next() {
-    
+    console.log('go details');
+    this.router.navigate(['/survey/price-a-job/details']);
   }
 }

@@ -11,6 +11,7 @@ import { EducationComponent } from './education/education.component';
 import { OptionalResearchQuestionsComponent } from './optional-research-questions/optional-research-questions.component';
 import { ReportComponent } from './report/report.component';
 import { PriceAJobComponent } from './price-a-job/price-a-job.component';
+import { DetailsComponent } from './price-a-job/details/details.component';
 
 const routes: Routes = [
   {
@@ -25,7 +26,8 @@ const routes: Routes = [
       {path: 'education', component: EducationComponent},
       {path: 'optional-research-questions', component: OptionalResearchQuestionsComponent},
       {path: 'report', component: ReportComponent},
-      {path: 'price-a-job', component: PriceAJobComponent}
+      {path: 'price-a-job', component: PriceAJobComponent},
+      {path: 'price-a-job/details', component: DetailsComponent}
     ]
   }
 ];
