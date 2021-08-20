@@ -71,79 +71,7 @@
           <div id="" class="pxl-form-group  ">
              <label class="  pxl-control-label" for="Gender">
                 Gender:<span class="pxl-tooltip  " data-tip="We use self-reported demographic data to analyze differences in pay across all population segments. This data is kept anonymous and does not affect your pay report at the end of the survey" data-for="GenderTooltip" currentitem="false"><span class="icon-reverse icon-circle"><i class="icon-info"></i></span></span>
-                <div class="__react_component_tooltip t015bbb8-a838-4750-9d8a-1d662c372b8a place-top type-dark" id="GenderTooltip" data-id="tooltip">
-                   <style>
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a {
-                      color: #fff;
-                      background: #222;
-                      border: 1px solid transparent;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-top {
-                      margin-top: -10px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-top::before {
-                      border-top: 8px solid transparent;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-top::after {
-                      border-left: 8px solid transparent;
-                      border-right: 8px solid transparent;
-                      bottom: -6px;
-                      left: 50%;
-                      margin-left: -8px;
-                      border-top-color: #222;
-                      border-top-style: solid;
-                      border-top-width: 6px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-bottom {
-                      margin-top: 10px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-bottom::before {
-                      border-bottom: 8px solid transparent;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-bottom::after {
-                      border-left: 8px solid transparent;
-                      border-right: 8px solid transparent;
-                      top: -6px;
-                      left: 50%;
-                      margin-left: -8px;
-                      border-bottom-color: #222;
-                      border-bottom-style: solid;
-                      border-bottom-width: 6px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-left {
-                      margin-left: -10px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-left::before {
-                      border-left: 8px solid transparent;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-left::after {
-                      border-top: 5px solid transparent;
-                      border-bottom: 5px solid transparent;
-                      right: -6px;
-                      top: 50%;
-                      margin-top: -4px;
-                      border-left-color: #222;
-                      border-left-style: solid;
-                      border-left-width: 6px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-right {
-                      margin-left: 10px;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-right::before {
-                      border-right: 8px solid transparent;
-                      }
-                      .t015bbb8-a838-4750-9d8a-1d662c372b8a.place-right::after {
-                      border-top: 5px solid transparent;
-                      border-bottom: 5px solid transparent;
-                      left: -6px;
-                      top: 50%;
-                      margin-top: -4px;
-                      border-right-color: #222;
-                      border-right-style: solid;
-                      border-right-width: 6px;
-                      }
-                   </style>
-                </div>
+
              </label>
              <div id="Gender" class="pxl-options control--md">
                 <div class="">
@@ -173,7 +101,10 @@
                 <div id="react-autowhatever-JobFiveYearsAgo" role="listbox" class="react-autosuggest__suggestions-container"></div>
              </div>
           </div>
-          <div class="survey-btn--block" style="text-align: center;"><button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">Skip this step</button><button type="submit" class="survey-btn--primary">Next</button></div>
+          <div class="survey-btn--block" style="text-align: center;">
+            <button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">Skip this step</button>
+            <button type="submit" class="survey-btn--primary" (click)="next()">Next</button>
+        </div>
        </form>
     </div>
  </div>

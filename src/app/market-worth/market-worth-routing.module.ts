@@ -8,6 +8,8 @@ import { SpecialConsiderationsComponent } from './special-considerations/special
 import { EmployerComponent } from './employer/employer.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { EducationComponent } from './education/education.component';
+import { OptionalResearchQuestionsComponent } from './optional-research-questions/optional-research-questions.component';
+import { ReportComponent } from './report/report.component';
 
 const routes: Routes = [
   {
@@ -19,7 +21,9 @@ const routes: Routes = [
       {path: 'special-considerations', component: SpecialConsiderationsComponent},
       {path: 'employer', component: EmployerComponent},
       {path: 'benefits', component: BenefitsComponent},
-      {path: 'education', component: EducationComponent}
+      {path: 'education', component: EducationComponent},
+      {path: 'optional-research-questions', component: OptionalResearchQuestionsComponent},
+      {path: 'report', component: ReportComponent}
     ]
   }
 ];

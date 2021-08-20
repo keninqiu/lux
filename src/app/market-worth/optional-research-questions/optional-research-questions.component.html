@@ -1,0 +1,104 @@
+<div class="container-survey">
+    <div id="progress-bar-container-v1" style="display: none;">
+       <div class="progress-bar">
+          <div class="progress-bar__bar">
+             <i class="icon-circle progress-bar__step-filled"></i>
+             <div class="progress-bar__range-unfilled">
+                <div class="progress-bar__range" style="width: 0%;"></div>
+             </div>
+             <i class="icon-circle-thin progress-bar__step"></i>
+             <div class="progress-bar__range-unfilled">
+                <div class="progress-bar__range" style="width: 0%;"></div>
+             </div>
+             <i class="icon-circle-thin progress-bar__step"></i>
+             <div class="progress-bar__range-unfilled">
+                <div class="progress-bar__range" style="width: 0%;"></div>
+             </div>
+             <i class="icon-circle-thin progress-bar__step-end"></i>
+          </div>
+          <div class="progress-bar__labels-container"><span class="progress-bar__labels">Career Profile</span><span class="progress-bar__labels">Your Pay</span><span class="progress-bar__labels">Pay Factors</span><span class="progress-bar__labels">Salary Report</span></div>
+       </div>
+    </div>
+    <div id="progress-bar-container-v2" style="display: none;">
+       <div class="progress-bar">
+          <div class="progress-bar__bar">
+             <i class="icon-circle progress-bar__step-filled"></i>
+             <div class="progress-bar__range-unfilled">
+                <div class="progress-bar__range" style="width: 100%;"></div>
+             </div>
+             <i class="icon-circle progress-bar__step-filled"></i>
+             <div class="progress-bar__range-unfilled">
+                <div class="progress-bar__range" style="width: 100%;"></div>
+             </div>
+             <i class="icon-circle progress-bar__step-filled"></i>
+             <div class="progress-bar__range-unfilled">
+                <div class="progress-bar__range" style="width: 52%;"></div>
+             </div>
+             <i class="icon-circle-thin progress-bar__step-end"></i>
+          </div>
+          <div class="progress-bar__labels-container"><span class="progress-bar__labels">Career Profile</span><span class="progress-bar__labels">Pay Factors</span><span class="progress-bar__labels">Education</span><span class="progress-bar__labels">Salary Report</span></div>
+       </div>
+    </div>
+    <div class="form-wrapper">
+       <form enctype="application/json" id="surveyForm" novalidate="">
+          <div class="survey__header">
+             <h1>Optional Research Questions</h1>
+             <p>We've begun collecting other types of data to help us build new features, provide interesting insights for you, or provide more useful information on our Research Center. These questions are completely optional. But, we'd sure love to know what you think.</p>
+          </div>
+          <div id="" class="pxl-form-group  ">
+             <label class="  pxl-control-label" for="JobSatisfaction">How satisfied are you in your job</label>
+             <select id="JobSatisfaction" class="control--md pxl-form-control" tabindex="0">
+                <option value="">- click to select -</option>
+                <option value="Extremely satisfied">Extremely satisfied</option>
+                <option value="Fairly satisfied">Fairly satisfied</option>
+                <option value="A little satisfied">A little satisfied</option>
+                <option value="Dissatisfied">Dissatisfied</option>
+                <option value="I hate my job">I hate my job</option>
+             </select>
+          </div>
+          <div id="" class="pxl-form-group  ">
+             <label class="  pxl-control-label" for="JobStress">How stressful is your job/work environment</label>
+             <select id="JobStress" class="control--md pxl-form-control" tabindex="0">
+                <option value="">- click to select -</option>
+                <option value="Extremely stressful">Extremely stressful</option>
+                <option value="Fairly stressful">Fairly stressful</option>
+                <option value="A little stressful">A little stressful</option>
+                <option value="Not stressful">Not stressful</option>
+                <option value="My job is relaxing">My job is relaxing</option>
+             </select>
+          </div>
+          <div id="" class="pxl-form-group  ">
+             <label class="  pxl-control-label" for="JobMeaning">Does your work make the world a better place</label>
+             <select id="JobMeaning" class="control--md pxl-form-control" tabindex="0">
+                <option value="">- click to select -</option>
+                <option value="Very much so">Very much so</option>
+                <option value="Yes">Yes</option>
+                <option value="A little">A little</option>
+                <option value="No">No</option>
+                <option value="My job may make the world a worse place">My job may make the world a worse place</option>
+             </select>
+          </div>
+          <div id="" class="pxl-form-group  ">
+             <label class="  pxl-control-label" for="RemoteWorkExpectations">Following work from home ordinances in 2020, have your expectations for remote work in your occupational field changed?</label>
+             <select id="RemoteWorkExpectations" class="control--md pxl-form-control" tabindex="0">
+                <option value="">- click to select -</option>
+                <option value="Yes, I expect more employers to offer remote work options in my field.">Yes, I expect more employers to offer remote work options in my field.</option>
+                <option value="Yes, I expect fewer employers to offer remote work options&nbsp;in my field.">Yes, I expect fewer employers to offer remote work options&nbsp;in my field.</option>
+                <option value="No, my expectations have not changed.">No, my expectations have not changed.</option>
+             </select>
+          </div>
+          <div id="" class="pxl-form-group  ">
+             <label class="  pxl-control-label" for="Parent">Are you a parent or primary caregiver?</label>
+             <select id="Parent" class="control--md pxl-form-control" tabindex="0">
+                <option value="">- click to select -</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+             </select>
+          </div>
+          <div class="survey-btn--block" style="text-align: center;">
+            <button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">Skip this step</button>
+            <button type="submit" class="survey-btn--primary" (click)="next()">Next</button>
+        </div>
+       </form>
+    </div>
+ </div>

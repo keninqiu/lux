@@ -12,11 +12,13 @@ import { SpecialConsiderationsComponent } from './special-considerations/special
 import { EmployerComponent } from './employer/employer.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { EducationComponent } from './education/education.component';
+import { OptionalResearchQuestionsComponent } from './optional-research-questions/optional-research-questions.component';
+import { ReportComponent } from './report/report.component';
 
 
 
 @NgModule({
-  declarations: [MarketWorthComponent, TopComponent, ContentComponent, BottomComponent, JobComponent, CompensationComponent, SpecialConsiderationsComponent, EmployerComponent, BenefitsComponent, EducationComponent],
+  declarations: [MarketWorthComponent, TopComponent, ContentComponent, BottomComponent, JobComponent, CompensationComponent, SpecialConsiderationsComponent, EmployerComponent, BenefitsComponent, EducationComponent, OptionalResearchQuestionsComponent, ReportComponent],
   imports: [
     CommonModule,
     LayoutModule,
