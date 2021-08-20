@@ -19,11 +19,20 @@ import { ResearchSchoolsAndDegreesComponent } from './research-schools-and-degre
 import { GetCareerTipsAndAdviceComponent } from './get-career-tips-and-advice/get-career-tips-and-advice.component';
 import { BrowseByStatesComponent } from './browse-by-states/browse-by-states.component';
 import { WhatAmIWorthComponent } from './what-am-i-worth/what-am-i-worth.component';
+import { BrowseCompaniesByIndustryComponent } from './browse-companies-by-industry/browse-companies-by-industry.component';
+import { RelatedArticlesComponent } from './related-articles/related-articles.component';
+import { CompensationBestPracticesComponent } from './compensation-best-practices/compensation-best-practices.component';
+import { PopularSearchesComponent } from './popular-searches/popular-searches.component';
+import { BrowseDegreesByFieldOfStudyComponent } from './browse-degrees-by-field-of-study/browse-degrees-by-field-of-study.component';
+import { BrowseCertificationsByIndustryComponent } from './browse-certifications-by-industry/browse-certifications-by-industry.component';
+import { BrowseSkillsByCategoryComponent } from './browse-skills-by-category/browse-skills-by-category.component';
+import { BrowseIndustriesByCategoryComponent } from './browse-industries-by-category/browse-industries-by-category.component';
+import { BrowseSchoolsByCategoryComponent } from './browse-schools-by-category/browse-schools-by-category.component';
 
 
 
 @NgModule({
-  declarations: [ResearchComponent, EmployerComponent, JobComponent, DegreeComponent, CertificationComponent, SkillComponent, IndustryComponent, SchoolComponent, SearchSalaryComponent, BrowseAllCategoriesComponent, FindYourMarketWorthComponent, BrowsePopularJobsComponent, LearnAboutEmployersComponent, ResearchSchoolsAndDegreesComponent, GetCareerTipsAndAdviceComponent, BrowseByStatesComponent, WhatAmIWorthComponent],
+  declarations: [ResearchComponent, EmployerComponent, JobComponent, DegreeComponent, CertificationComponent, SkillComponent, IndustryComponent, SchoolComponent, SearchSalaryComponent, BrowseAllCategoriesComponent, FindYourMarketWorthComponent, BrowsePopularJobsComponent, LearnAboutEmployersComponent, ResearchSchoolsAndDegreesComponent, GetCareerTipsAndAdviceComponent, BrowseByStatesComponent, WhatAmIWorthComponent, BrowseCompaniesByIndustryComponent, RelatedArticlesComponent, CompensationBestPracticesComponent, PopularSearchesComponent, BrowseDegreesByFieldOfStudyComponent, BrowseCertificationsByIndustryComponent, BrowseSkillsByCategoryComponent, BrowseIndustriesByCategoryComponent, BrowseSchoolsByCategoryComponent],
   imports: [
     ResearchRoutingModule,
     LayoutModule,

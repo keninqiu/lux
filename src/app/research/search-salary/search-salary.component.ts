@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search-salary',
@@ -11,10 +11,18 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class SearchSalaryComponent implements OnInit {
-
+  isOpen: boolean;
+  @Input() title: string;
+  @Input() selectedCategory: string;
+  @Input() placeholder: string;
   constructor() { }
 
   ngOnInit(): void {
+    this.isOpen = false;
+    
   }
 
+  toggle() {
+    this.isOpen = !this.isOpen;
+  }
 }
