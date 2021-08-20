@@ -1,0 +1,47 @@
+<div class="container-survey">
+    <div class="priceajob">
+       <div class="priceajob__header">
+          <h1 class="priceajob__header__title">Price a Job</h1>
+          <h3 class="priceajob__header__subtitle">Let's start building a profile with a job title and location.</h3>
+       </div>
+       <form enctype="application/json" class="full-width" __bizdiag="0" __biza="W___">
+          <div class="priceajob__form">
+             <label for="JobTitle" class="priceajob__form__label">Job Title</label><input id="JobTitle" placeholder="e.g. Actuary" class="pxl-form-control control--md" value="">
+             <div id="" class="pxl-form-group hidden-question"><input class=" pxl-form-control" type="text" id="JobTitle" tabindex="0" value=""></div>
+             <div id="" class="pxl-form-group hidden-question"><input class=" pxl-form-control" type="text" id="Flow" tabindex="0" value=""></div>
+             <div id="" class="pxl-form-group  ">
+                <label class="  pxl-control-label" for="Location">City</label>
+                <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-Location" aria-expanded="false" class="react-autosuggest__container">
+                   <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-Location" class="pxl-form-control control--md" tabindex="0" id="Location" placeholder="e.g. Seattle, WA" value="">
+                   <div id="react-autowhatever-Location" role="listbox" class="react-autosuggest__suggestions-container"></div>
+                </div>
+             </div>
+             <div id="" class="pxl-form-group  ">
+                <div class="control--md">
+                   <a class="">Canada</a>
+                   <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-Country" aria-expanded="false" class="react-autosuggest__container">
+                      <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-Country" class="pxl-form-control pxl-hidden" id="Country" placeholder="" value="Canada">
+                      <div id="react-autowhatever-Country" role="listbox" class="react-autosuggest__suggestions-container"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div id="jobcards" class="priceajob__jobcards__header hidden">
+             <h2 class="priceajob__jobcards__header__title"> Suggested Titles </h2>
+             <h3 class="priceajob__jobcards__header__subtitle">Select the closest match to the job you want to benchmark.</h3>
+          </div>
+          <div class="jobcards hidden">
+             <div class="carousel priceajob-carousel" role="listbox">
+                <div class="carousel__content" style="width: 720px;">
+                   <div class="carousel__arrow carousel__arrow--left carousel__arrow--invisible"><span role="button" aria-label="View previous Job Titles">‹</span></div>
+                   <div class="carousel__items-window">
+                      <div class="carousel__items" style="transform: translate(1px);"></div>
+                   </div>
+                   <div class="carousel__arrow carousel__arrow--right carousel__arrow--invisible"><span role="button" aria-label="View next Job Titles">›</span></div>
+                </div>
+             </div>
+          </div>
+          <button type="submit" class="survey-btn--block survey-btn--primary" (click)="next()">Next</button>
+       </form>
+    </div>
+ </div>

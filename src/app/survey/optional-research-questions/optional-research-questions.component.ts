@@ -17,6 +17,6 @@ export class OptionalResearchQuestionsComponent implements OnInit {
   }
 
   next() {
-    this.router.navigate(['/market-worth/report']);
+    this.router.navigate(['/survey/report']);
   }
 }

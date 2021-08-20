@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-job',
-  templateUrl: './job.component.html',
+  selector: 'app-education',
+  templateUrl: './education.component.html',
   styleUrls: [
-    './job.component.scss',
+    './education.component.scss',
     '../../../assets/css/market-worth/main.css'
   ]
 })
-export class JobComponent implements OnInit {
+export class EducationComponent implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -17,6 +17,6 @@ export class JobComponent implements OnInit {
   }
 
   next() {
-    this.router.navigate(['/market-worth/compensation']);
+    this.router.navigate(['/survey/optional-research-questions']);
   }
 }

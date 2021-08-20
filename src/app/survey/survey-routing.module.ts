@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MarketWorthComponent } from './market-worth.component';
-import { ContentComponent } from './content/content.component';
+import { SurveyComponent } from './survey.component';
+import { ChooseComponent } from './choose/choose.component';
 import { JobComponent } from './job/job.component';
 import { CompensationComponent } from './compensation/compensation.component';
 import { SpecialConsiderationsComponent } from './special-considerations/special-considerations.component';
@@ -10,12 +10,13 @@ import { BenefitsComponent } from './benefits/benefits.component';
 import { EducationComponent } from './education/education.component';
 import { OptionalResearchQuestionsComponent } from './optional-research-questions/optional-research-questions.component';
 import { ReportComponent } from './report/report.component';
+import { PriceAJobComponent } from './price-a-job/price-a-job.component';
 
 const routes: Routes = [
   {
-    path: '', component: MarketWorthComponent,
+    path: '', component: SurveyComponent,
     children: [
-      {path: '', component: ContentComponent},
+      {path: 'choose', component: ChooseComponent},
       {path: 'job', component: JobComponent},
       {path: 'compensation', component: CompensationComponent},
       {path: 'special-considerations', component: SpecialConsiderationsComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
       {path: 'benefits', component: BenefitsComponent},
       {path: 'education', component: EducationComponent},
       {path: 'optional-research-questions', component: OptionalResearchQuestionsComponent},
-      {path: 'report', component: ReportComponent}
+      {path: 'report', component: ReportComponent},
+      {path: 'price-a-job', component: PriceAJobComponent}
     ]
   }
 ];
@@ -32,4 +34,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class MarketWorthRoutingModule { }
+export class SurveyRoutingModule { }

@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-content',
-  templateUrl: './content.component.html',
+  selector: 'app-choose',
+  templateUrl: './choose.component.html',
   styleUrls: [
-    './content.component.scss',
+    './choose.component.scss',
     '../../../assets/css/market-worth/main.css'
   ]
 })
-export class ContentComponent implements OnInit {
+export class ChooseComponent implements OnInit {
 
   constructor() { }
 

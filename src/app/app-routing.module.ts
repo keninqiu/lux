@@ -16,7 +16,7 @@ const routes: Routes = [
     path: 'price-job', loadChildren: () => import('./price-job/price-job.module').then(m => m.PriceJobModule)
   },
   {
-    path: 'market-worth', loadChildren: () => import('./market-worth/market-worth.module').then(m => m.MarketWorthModule)
+    path: 'survey', loadChildren: () => import('./survey/survey.module').then(m => m.SurveyModule)
   }    
 ];
 

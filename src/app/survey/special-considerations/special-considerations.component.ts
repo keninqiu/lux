@@ -2,21 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-benefits',
-  templateUrl: './benefits.component.html',
+  selector: 'app-special-considerations',
+  templateUrl: './special-considerations.component.html',
   styleUrls: [
-    './benefits.component.scss',
+    './special-considerations.component.scss',
     '../../../assets/css/market-worth/main.css'
   ]
 })
-export class BenefitsComponent implements OnInit {
+export class SpecialConsiderationsComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
   next() {
-    this.router.navigate(['/market-worth/education']);
+    this.router.navigate(['/survey/employer']);
   }
 }
