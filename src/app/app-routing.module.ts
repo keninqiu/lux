@@ -11,7 +11,13 @@ const routes: Routes = [
   },
   {
     path: 'salary', loadChildren: () => import('./salary/salary.module').then(m => m.SalaryModule)
-  }  
+  },
+  {
+    path: 'price-job', loadChildren: () => import('./price-job/price-job.module').then(m => m.PriceJobModule)
+  },
+  {
+    path: 'market-worth', loadChildren: () => import('./market-worth/market-worth.module').then(m => m.MarketWorthModule)
+  }    
 ];
 
 @NgModule({

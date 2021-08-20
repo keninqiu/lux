@@ -1,0 +1,37 @@
+<div class="container-survey">
+    <div class="choose">
+       <h1 class="choose__title">PayScale Salary Survey</h1>
+       <div class="choose__subtitle">Which option describes your situation?</div>
+       <div class="choose__buttons">
+          <div class="choose__btn">
+             <img class="choose__btn-icon" src="//cdn-payscale.com/content/choose-page-icon-currentjob.png">
+             <div class="choose__btn-copy">
+                <div class="choose__btn-header">Current Job</div>
+                <div class="choose__btn-description">I want salary information for my current role</div>
+             </div>
+             <a routerLink="./job">
+                <button class="choose__btn-input" type="submit" id="currentJobButton" name="profiletype" value="CurrentJob">Select</button><i class="choose__btn-arrow icon-right-open"></i>
+            </a>
+             
+          </div>
+          <div class="choose__btn">
+             <img class="choose__btn-icon" src="//cdn-payscale.com/content/choose-page-icon-joboffer.png">
+             <div class="choose__btn-copy">
+                <div class="choose__btn-header">Job Offer</div>
+                <div class="choose__btn-description">I am evaluating a job offer</div>
+             </div>
+             <button class="choose__btn-input" type="submit" id="jobOfferButton" name="profiletype" value="JobOffer">Select</button><i class="choose__btn-arrow icon-right-open"></i>
+          </div>
+          <div class="choose__btn">
+             <img class="choose__btn-icon" src="//cdn-payscale.com/content/choose-page-icon-whatif.png">
+             <div class="choose__btn-copy">
+                <div class="choose__btn-header">Just Exploring</div>
+                <div class="choose__btn-description">I am doing research on a job that is not my own</div>
+             </div>
+             <button class="choose__btn-input" type="submit" id="exploreButton" name="profiletype" value="Informational">Select</button><i class="choose__btn-arrow icon-right-open"></i>
+          </div>
+       </div>
+       <div class="choose__emp-link"><a href="/price-a-job?src=survey-choose">I'm an employer looking to pay fairly</a></div>
+       <p class="choose__privacy-copy">Remember: As we lead you through this survey, the more specific your answers are the more accurate your salary report will be. And, any information you share with us will be kept confidential.</p>
+    </div>
+ </div>
