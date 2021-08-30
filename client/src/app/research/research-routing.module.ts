@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResearchComponent } from './research.component';
 import { EmployerComponent } from './employer/employer.component';
+import { JobComponent } from './job/job.component';
 import { DegreeComponent } from './degree/degree.component';
 import { CertificationComponent } from './certification/certification.component';
 import { SkillComponent } from './skill/skill.component';
@@ -10,6 +11,7 @@ import { SchoolComponent } from './school/school.component';
 
 const routes: Routes = [
   { path: '', component: ResearchComponent },
+  { path: 'job', component: JobComponent },
   { path: 'employer', component: EmployerComponent },
   { path: 'degree', component: DegreeComponent },
   { path: 'certification', component: CertificationComponent },
