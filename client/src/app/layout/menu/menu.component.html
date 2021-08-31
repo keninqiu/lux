@@ -1,6 +1,6 @@
 <header id="banner" class="banner banner--static">
   <div id="header" data-header-style="white">
-     <nav id="navbar" class="pxl-navbar pxl-navbar--white">
+     <nav id="navbar" class="pxl-navbar pxl-navbar--white" [ngClass]="showMobileMenu ? 'pxl-navbar--active' : ''">
         <div class="pxl-navbar__branding">
            <a href="/">
             <!--
@@ -381,7 +381,7 @@
               <div class="pxl-navbar__subnav pxl-navbar__subnav--account"><a class="pxl-navbar__subnav-link" href="/logout.aspx">Logout</a><a class="pxl-navbar__subnav-link" href="/myaccount.aspx">My Account</a><a class="pxl-navbar__subnav-link" href="/mypayscale.aspx">My Salary Reports</a></div>
            </li>
            <a id="psNavBarLogin" href="/login.aspx" class="pxl-navbar__login">Log In</a><a id="psNavBarMyReports" href="/mypayscale.aspx" class="pxl-navbar__myreports hidden">My Reports</a><a id="psNavBarLogout" href="/logout.aspx" class="pxl-navbar__logout hidden">Log Out</a>
-           <div id="psNavBarMobileMenu" class="pxl-navbar__menu--mobile">Menu</div>
+           <div id="psNavBarMobileMenu" class="pxl-navbar__menu--mobile" (click)="toggleMenu()">Menu</div>
         </div>
      </nav>
   </div>
