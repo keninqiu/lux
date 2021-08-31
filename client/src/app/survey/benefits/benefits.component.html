@@ -42,19 +42,19 @@
     <div class="form-wrapper">
        <form enctype="application/json" id="surveyForm" novalidate="">
           <div class="survey__header">
-             <h1>Your Benefits</h1>
-             <p>Beyond pay, benefits are a key component of how you are compensated. Please tell us about your current benefits - and the perks, too!</p>
+             <h1>你的福利</h1>
+             <p>除了薪酬之外，福利也是您获得报酬的重要组成部分。 请告诉我们您目前的福利和津贴！</p>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="VacationWeeks">Weeks of paid vacation (e.g. 0, 2, etc.)</label>
+             <label class="  pxl-control-label" for="VacationWeeks">带薪休假周数 (例如 0, 2)</label>
              <div class="pxl-input-number">
                 <input class="control--xs pxl-input-number__input pxl-form-control" type="number" id="VacationWeeks" tabindex="0" value="">
                 <div class="pxl-input-number__format"></div>
              </div>
           </div>
           <div id="" class="pxl-form-group   form-group--checkbox">
-             <label class="  pxl-control-label" for="HealthBenefits">Do you receive health benefits as part of your compensation?</label>
-             <div class="pxl-segmented pxl-segmented--justified control--sm pxl-segmented--primary" data-toggle="buttons"><button type="button" class="pxl-segmented__segment ">Yes</button><button type="button" class="pxl-segmented__segment ">No</button></div>
+             <label class="  pxl-control-label" for="HealthBenefits">您是否获得健康福利作为补偿的一部分？</label>
+             <div class="pxl-segmented pxl-segmented--justified control--sm pxl-segmented--primary" data-toggle="buttons"><button type="button" class="pxl-segmented__segment ">是</button><button type="button" class="pxl-segmented__segment ">否</button></div>
              <div id="HealthBenefits" class="pxl-options toggle-checklist--hidden control--md">
                 <div class="">
                    <label class="pxl-option pxl-option--checklist pxl-option--primary">
@@ -73,7 +73,7 @@
              </div>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="Telecommute">Are you able to telecommute / work from home?</label>
+             <label class="  pxl-control-label" for="Telecommute">你能在家远程办公/工作吗？</label>
              <select id="Telecommute" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="Yes, I telecommute 100% of the time">Yes, I telecommute 100% of the time</option>
@@ -84,7 +84,7 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="BenefitsPerks">All other benefits and perks you receive</label>
+             <label class="  pxl-control-label" for="BenefitsPerks">您获得的所有其他福利和津贴</label>
              <div class="pxl-tagsinput-autocomplete control--lg">
                 <div class="react-tagsinput">
                    <div>
@@ -117,11 +117,11 @@
                          <div class="pxl-option__text">401(k)</div>
                       </label>
                    </div>
-                   <div class="pxl-margin-top-md pxl-text-center"><a class="load-more">Load More</a></div>
+                   <div class="pxl-margin-top-md pxl-text-center"><a class="load-more">加载更多</a></div>
                 </div>
              </div>
           </div>
-          <button type="submit" class="survey-btn--block survey-btn--primary" (click)="next()">Next</button>
+          <button type="submit" class="survey-btn--block survey-btn--primary" (click)="next()">下一步</button>
        </form>
     </div>
  </div>

@@ -17,6 +17,6 @@ export class DetailsComponent implements OnInit {
   }
 
   next() {
-    this.router.navigate(['/survey/report?tab=business']);
+    this.router.navigate(['/survey/report']);
   }
 }

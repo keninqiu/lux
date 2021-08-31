@@ -8,11 +8,13 @@
 					
     <div class="container">
         <div id="ctl00_mainContent_success_message" class="email-verification">
-            <div class="email-verification__heading">Please verify your email address</div>
-            <div class="email-verification__message">A verification email has been sent to:</div>
+            <div class="email-verification__heading">请验证你的邮箱</div>
+            <div class="email-verification__message">验证码已发送到以下邮箱</div>
             <div class="email-verification__message email-verification__message--bold">kenin.qiu+11@gmail.com</div>
-            <div class="email-verification__message">Click the link in the email to verify your email address.</div>
-            <a class="email-verification__link" onclick="resend()">Resend the email</a>
+            <div class="email-verification__message">点击邮件里的链接来验证你的邮箱</div>
+            <a class="email-verification__link" (click)="resend()">重发邮件</a>
+
+            <a class="email-verification__link" (click)="next()">下一步</a>
         </div>
         
     </div>

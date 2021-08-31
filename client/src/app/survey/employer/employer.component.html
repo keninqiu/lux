@@ -42,12 +42,12 @@
     <div class="form-wrapper">
        <form enctype="application/json" id="surveyForm" novalidate="">
           <div class="survey__header">
-             <h1>Your Employer</h1>
-             <p>Details about your employer's type and industry can affect your pay and are required to provide you the most precise salary range possible.</p>
-             <p class="required-key"><span class="required-key__symbol">*</span> Required Information</p>
+             <h1>你的雇主</h1>
+             <p>关您雇主类型和行业的详细信息可能会影响您的薪酬，并且需要为您提供最准确的薪酬范围。</p>
+             <p class="required-key"><span class="required-key__symbol">*</span> 必须的信息</p>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="required  pxl-control-label" for="OrganizationType">Type of employer</label>
+             <label class="required  pxl-control-label" for="OrganizationType">雇主类型</label>
              <select id="OrganizationType" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="Company">Company</option>
@@ -69,42 +69,42 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="required  pxl-control-label" for="EmployerProductActivity">Employer's product/business</label>
+             <label class="required  pxl-control-label" for="EmployerProductActivity">雇主的产品或行业</label>
              <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-EmployerProductActivity" aria-expanded="false" class="react-autosuggest__container">
                 <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-EmployerProductActivity" class="pxl-form-control control--md" tabindex="0" id="EmployerProductActivity" placeholder="Start typing to see suggestions" value="">
                 <div id="react-autowhatever-EmployerProductActivity" role="listbox" class="react-autosuggest__suggestions-container"></div>
              </div>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="EmployerName">Employer name</label>
+             <label class="  pxl-control-label" for="EmployerName">雇主名称</label>
              <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-EmployerName" aria-expanded="false" class="react-autosuggest__container">
                 <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-EmployerName" class="pxl-form-control control--md" tabindex="0" id="EmployerName" placeholder="Start typing to see suggestions" value="">
                 <div id="react-autowhatever-EmployerName" role="listbox" class="react-autosuggest__suggestions-container"></div>
              </div>
           </div>
           <div id="" class="pxl-form-group control--horizontal ">
-             <label class="  pxl-control-label" for="AverageSizeCompetitor">Number of employees (entire organization)</label>
+             <label class="  pxl-control-label" for="AverageSizeCompetitor">员工人数（整个组织）</label>
              <div class="pxl-input-number">
                 <input class="control--xs pxl-input-number__input pxl-form-control" type="number" id="AverageSizeCompetitor" tabindex="0" value="">
                 <div class="pxl-input-number__format"></div>
              </div>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="GovernmentContractor">Is your employer primarily a government contractor?</label>
+             <label class="  pxl-control-label" for="GovernmentContractor">您的雇主主要是政府承包商吗？</label>
              <div id="GovernmentContractor" class="pxl-options control--md">
                 <div class="">
                    <label class="pxl-option pxl-option--radio pxl-option--primary">
                       <input id="Yes" type="checkbox" tabindex="0" class="pxl-option__input" value="Yes">
-                      <div class="pxl-option__text">Yes</div>
+                      <div class="pxl-option__text">是</div>
                    </label>
                    <label class="pxl-option pxl-option--radio pxl-option--primary">
                       <input id="No" type="checkbox" tabindex="0" class="pxl-option__input" value="No">
-                      <div class="pxl-option__text">No</div>
+                      <div class="pxl-option__text">否</div>
                    </label>
                 </div>
              </div>
           </div>
-          <button type="submit" class="survey-btn--block survey-btn--primary" (click)="next()">Next</button>
+          <button type="submit" class="survey-btn--block survey-btn--primary" (click)="next()">下一步</button>
        </form>
     </div>
  </div>

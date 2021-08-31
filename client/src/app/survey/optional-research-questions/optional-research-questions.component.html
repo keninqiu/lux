@@ -42,11 +42,11 @@
     <div class="form-wrapper">
        <form enctype="application/json" id="surveyForm" novalidate="">
           <div class="survey__header">
-             <h1>Optional Research Questions</h1>
-             <p>We've begun collecting other types of data to help us build new features, provide interesting insights for you, or provide more useful information on our Research Center. These questions are completely optional. But, we'd sure love to know what you think.</p>
+             <h1>可选问题</h1>
+             <p>我们已经开始收集其他类型的数据，以帮助我们构建新功能、为您提供有趣的见解或提供有关我们研究中心的更多有用信息。 这些问题完全是可选的。 但是，我们肯定很想知道您的想法。</p>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="JobSatisfaction">How satisfied are you in your job</label>
+             <label class="  pxl-control-label" for="JobSatisfaction">你对你的工作有多满意</label>
              <select id="JobSatisfaction" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="Extremely satisfied">Extremely satisfied</option>
@@ -57,7 +57,7 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="JobStress">How stressful is your job/work environment</label>
+             <label class="  pxl-control-label" for="JobStress">您的工作/工作环境压力有多大</label>
              <select id="JobStress" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="Extremely stressful">Extremely stressful</option>
@@ -68,7 +68,7 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="JobMeaning">Does your work make the world a better place</label>
+             <label class="  pxl-control-label" for="JobMeaning">你的工作是否让世界变得更美好</label>
              <select id="JobMeaning" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="Very much so">Very much so</option>
@@ -79,7 +79,7 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="RemoteWorkExpectations">Following work from home ordinances in 2020, have your expectations for remote work in your occupational field changed?</label>
+             <label class="  pxl-control-label" for="RemoteWorkExpectations">继 2020 年居家令工作之后，您对职业领域远程工作的期望是否发生了变化？</label>
              <select id="RemoteWorkExpectations" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="Yes, I expect more employers to offer remote work options in my field.">Yes, I expect more employers to offer remote work options in my field.</option>
@@ -88,16 +88,16 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="Parent">Are you a parent or primary caregiver?</label>
+             <label class="  pxl-control-label" for="Parent">您是父母或主要看护人吗？</label>
              <select id="Parent" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+                <option value="Yes">是</option>
+                <option value="No">否</option>
              </select>
           </div>
           <div class="survey-btn--block" style="text-align: center;">
-            <button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">Skip this step</button>
-            <button type="submit" class="survey-btn--primary" (click)="next()">Next</button>
+            <button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">跳过这一步</button>
+            <button type="submit" class="survey-btn--primary" (click)="next()">下一步</button>
         </div>
        </form>
     </div>

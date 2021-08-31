@@ -1,18 +1,18 @@
 <div class="container-survey">
-    <form enctype="application/json" id="surveyForm" novalidate="" __bizdiag="0" __biza="W___">
+
        <div class="survey__header">
-          <h1>Add Details</h1>
-          <p>PayScale looks at lots of compensable factors to benchmark jobs.</p>
+          <h1>添加详细内容</h1>
+          <p>Lux侧重于通过很多因素来衡量工作</p>
        </div>
        <div id="" class="pxl-form-group  ">
-          <label class="  pxl-control-label" for="YearsExperience">Years of experience typical for someone at full proficiency for this role</label>
+          <label class="  pxl-control-label" for="YearsExperience">多年经验对于完全精通此角色的人来说是典型的</label>
           <div class="pxl-input-number">
              <input class="control--xs pxl-input-number__input pxl-form-control" type="number" id="YearsExperience" tabindex="0" value="">
              <div class="pxl-input-number__format"></div>
           </div>
        </div>
        <div id="" class="pxl-form-group  ">
-          <label class="  pxl-control-label" for="YearsMinimum">Minimum years of experience to be fully proficient for this role</label>
+          <label class="  pxl-control-label" for="YearsMinimum">至少多年的经验才能完全精通此角色</label>
           <div class="pxl-input-number">
              <input class="control--xs pxl-input-number__input pxl-form-control" type="number" id="YearsMinimum" tabindex="0" value="">
              <div class="pxl-input-number__format"></div>
@@ -20,10 +20,10 @@
        </div>
        <div class=" ">
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="HighestDegreeEarned">Education</label>
+             <label class="  pxl-control-label" for="HighestDegreeEarned">教育</label>
              <select id="HighestDegreeEarned" class="control--md pxl-form-control" tabindex="0">
-                <option value="">- click to select -</option>
-                <option value="No Degree">No Degree</option>
+                <option value="">- 点击选择 -</option>
+                <option value="No Degree">没有学位</option>
                 <option value="Associate's Degree">Associates</option>
                 <option value="Bachelor's Degree">Bachelors</option>
                 <option value="Other">Other</option>
@@ -38,7 +38,7 @@
           </div>
        </div>
        <div id="" class="pxl-form-group  ">
-          <label class="  pxl-control-label" for="Skills">Choose the most important skills and specialties for this job</label>
+          <label class="  pxl-control-label" for="Skills">为这份工作选择最重要的技能和专业</label>
           <div class="pxl-tagsinput-autocomplete control--lg">
              <div class="react-tagsinput">
                 <div>
@@ -76,7 +76,7 @@
           </div>
        </div>
        <div id="" class="pxl-form-group  ">
-          <label class="  pxl-control-label" for="Certifications">Choose the most important certifications for this job (if any)</label>
+          <label class="  pxl-control-label" for="Certifications">为这份工作选择最重要的证书（如果有）</label>
           <div class="pxl-tagsinput-autocomplete control--lg">
              <div class="react-tagsinput">
                 <div>
@@ -114,9 +114,8 @@
           </div>
        </div>
        <div id="" class="pxl-form-group  ">
-          <label class="  pxl-control-label" for="ManagementRole">Will this job supervise employees?</label>
-          <div class="pxl-segmented pxl-segmented--justified control--sm pxl-segmented--primary" data-toggle="buttons"><button type="button" class="pxl-segmented__segment ">Yes</button><button type="button" class="pxl-segmented__segment ">No</button></div>
+          <label class="  pxl-control-label" for="ManagementRole">这份工作会监督员工吗？</label>
+          <div class="pxl-segmented pxl-segmented--justified control--sm pxl-segmented--primary" data-toggle="buttons"><button type="button" class="pxl-segmented__segment ">是</button><button type="button" class="pxl-segmented__segment ">否</button></div>
        </div>
-       <button type="submit" class="survey-btn--block survey-btn--primary" (click)="next()">Next</button>
-    </form>
+       <button class="survey-btn--block survey-btn--primary" (click)="next()">下一步</button>
  </div>

@@ -42,11 +42,11 @@
     <div class="form-wrapper">
        <form enctype="application/json" id="surveyForm" novalidate="">
           <div class="survey__header">
-             <h1>Education &amp; Demographics</h1>
-             <p>For some jobs, education is one of the key forms of qualification.</p>
+             <h1>教育和人口统计</h1>
+             <p>对于某些工作，教育是资格的主要形式之一。</p>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="HighestDegreeEarnedEducationalLevel">Select your highest degree completed</label>
+             <label class="  pxl-control-label" for="HighestDegreeEarnedEducationalLevel">选择您完成的最高学位</label>
              <select id="HighestDegreeEarnedEducationalLevel" class="control--md pxl-form-control" tabindex="0">
                 <option value="">- click to select -</option>
                 <option value="No Degree">No Degree</option>
@@ -62,7 +62,7 @@
              </select>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="Age">Your age (in years):</label>
+             <label class="  pxl-control-label" for="Age">您的年龄（岁）：</label>
              <div class="pxl-input-number">
                 <input class="control--xs pxl-input-number__input pxl-form-control" type="number" id="Age" tabindex="0" value="">
                 <div class="pxl-input-number__format"></div>
@@ -70,7 +70,7 @@
           </div>
           <div id="" class="pxl-form-group  ">
              <label class="  pxl-control-label" for="Gender">
-                Gender:<span class="pxl-tooltip  " data-tip="We use self-reported demographic data to analyze differences in pay across all population segments. This data is kept anonymous and does not affect your pay report at the end of the survey" data-for="GenderTooltip" currentitem="false"><span class="icon-reverse icon-circle"><i class="icon-info"></i></span></span>
+                性别:<span class="pxl-tooltip  " data-tip="We use self-reported demographic data to analyze differences in pay across all population segments. This data is kept anonymous and does not affect your pay report at the end of the survey" data-for="GenderTooltip" currentitem="false"><span class="icon-reverse icon-circle"><i class="icon-info"></i></span></span>
 
              </label>
              <div id="Gender" class="pxl-options control--md">
@@ -91,19 +91,19 @@
              </div>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="MilitaryExperience">Do you have U.S. military experience?</label>
+             <label class="  pxl-control-label" for="MilitaryExperience">你有美国军事经验吗？</label>
              <div class="pxl-segmented pxl-segmented--justified control--sm pxl-segmented--primary" data-toggle="buttons"><button type="button" class="pxl-segmented__segment ">Yes</button><button type="button" class="pxl-segmented__segment ">No</button></div>
           </div>
           <div id="" class="pxl-form-group  ">
-             <label class="  pxl-control-label" for="JobFiveYearsAgo">What was your job title 5 years ago?</label>
+             <label class="  pxl-control-label" for="JobFiveYearsAgo">5年前你的职位是什么？</label>
              <div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-JobFiveYearsAgo" aria-expanded="false" class="react-autosuggest__container">
                 <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-JobFiveYearsAgo" class="pxl-form-control control--md" tabindex="0" id="JobFiveYearsAgo" placeholder="Start typing to see answers" value="">
                 <div id="react-autowhatever-JobFiveYearsAgo" role="listbox" class="react-autosuggest__suggestions-container"></div>
              </div>
           </div>
           <div class="survey-btn--block" style="text-align: center;">
-            <button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">Skip this step</button>
-            <button type="submit" class="survey-btn--primary" (click)="next()">Next</button>
+            <button type="submit" id="skip-button" class="survey-btn--secondary" style="display: none;">跳过这一步</button>
+            <button type="submit" class="survey-btn--primary" (click)="next()">下一步</button>
         </div>
        </form>
     </div>
