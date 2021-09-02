@@ -1,24 +1,5 @@
-<main class="drift-widget-chat-layout" *ngIf="chatOpen" style="
-right: 24px;
-bottom: 124px;
-position: fixed; z-index: 2147483647;
-width: 400px!important; 
-max-height: calc(100% - 158px);
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
--webkit-box-shadow: 0 7px 6px 1px rgb(0 0 0 / 16%);
--moz-box-shadow: 0 7px 6px 1px rgba(0,0,0,.16);
-box-shadow: 0 7px 6px 1px rgb(0 0 0 / 16%);
--webkit-transform: translateY(0);
--moz-transform: translateY(0);
--ms-transform: translateY(0);
--o-transform: translateY(0);
-transform: translateY(0);">
-    <div  class="drift-widget-chat-wrapper drift-widget-chat-wrapper__open drift-widget-chat-wrapper__active-conversation drift-widget-chat-wrapper__no-footer-content">
-      <app-chatbot-content ></app-chatbot-content>
-    </div>
-</main>
+<app-chatbot-content *ngIf="chatOpen"></app-chatbot-content>
+
 
 
 
