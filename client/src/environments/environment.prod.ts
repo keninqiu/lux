@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API: 'http://localhost:3004/api/'
+  API: 'http://luxs.miri.io/api/'
 };
