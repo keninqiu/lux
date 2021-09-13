@@ -8,9 +8,12 @@ import { CertificationComponent } from './certification/certification.component'
 import { SkillComponent } from './skill/skill.component';
 import { IndustryComponent } from './industry/industry.component';
 import { SchoolComponent } from './school/school.component';
-
+import { CountriesComponent } from './countries/countries.component';
+import { CountryComponent } from './country/country.component';
 const routes: Routes = [
   { path: '', component: ResearchComponent },
+  { path: 'Country', component: CountriesComponent },
+  { path: 'Country/:code/Salary', component: CountryComponent },
   { path: 'job', component: JobComponent },
   { path: 'employer', component: EmployerComponent },
   { path: 'degree', component: DegreeComponent },

@@ -29,10 +29,46 @@ import { BrowseSkillsByCategoryComponent } from './browse-skills-by-category/bro
 import { BrowseIndustriesByCategoryComponent } from './browse-industries-by-category/browse-industries-by-category.component';
 import { BrowseSchoolsByCategoryComponent } from './browse-schools-by-category/browse-schools-by-category.component';
 
+import { CountriesComponent } from './countries/countries.component';
+import { PopularCountriesComponent } from './countries/popular/popular.component';
+import { BrowseCountriesComponent } from './countries/browse/browse.component';
+import { CountryComponent } from './country/country.component';
+import { BreadcrumbsComponent } from './country/breadcrumbs/breadcrumbs.component';
 
 
 @NgModule({
-  declarations: [ResearchComponent, EmployerComponent, JobComponent, DegreeComponent, CertificationComponent, SkillComponent, IndustryComponent, SchoolComponent, SearchSalaryComponent, BrowseAllCategoriesComponent, FindYourMarketWorthComponent, BrowsePopularJobsComponent, LearnAboutEmployersComponent, ResearchSchoolsAndDegreesComponent, GetCareerTipsAndAdviceComponent, BrowseByStatesComponent, WhatAmIWorthComponent, BrowseCompaniesByIndustryComponent, RelatedArticlesComponent, CompensationBestPracticesComponent, PopularSearchesComponent, BrowseDegreesByFieldOfStudyComponent, BrowseCertificationsByIndustryComponent, BrowseSkillsByCategoryComponent, BrowseIndustriesByCategoryComponent, BrowseSchoolsByCategoryComponent],
+  declarations: [
+    PopularCountriesComponent,
+    BrowseCountriesComponent,
+    ResearchComponent, 
+    EmployerComponent, 
+    JobComponent, 
+    DegreeComponent, 
+    CertificationComponent, 
+    SkillComponent, 
+    IndustryComponent, 
+    SchoolComponent, 
+    SearchSalaryComponent, 
+    BrowseAllCategoriesComponent, 
+    FindYourMarketWorthComponent, 
+    BrowsePopularJobsComponent, 
+    LearnAboutEmployersComponent, 
+    ResearchSchoolsAndDegreesComponent, 
+    GetCareerTipsAndAdviceComponent, 
+    BrowseByStatesComponent, 
+    WhatAmIWorthComponent, 
+    BrowseCompaniesByIndustryComponent, 
+    RelatedArticlesComponent, 
+    CompensationBestPracticesComponent, 
+    PopularSearchesComponent, 
+    BrowseDegreesByFieldOfStudyComponent, 
+    BrowseCertificationsByIndustryComponent, 
+    BrowseSkillsByCategoryComponent, 
+    BrowseIndustriesByCategoryComponent, 
+    BrowseSchoolsByCategoryComponent, 
+    CountriesComponent, 
+    CountryComponent, BreadcrumbsComponent
+  ],
   imports: [
     ResearchRoutingModule,
     LayoutModule,
